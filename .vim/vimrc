@@ -1,0 +1,39 @@
+"*******************************************************************************
+" Dan Peck
+" vimrc
+"*******************************************************************************
+
+" Basics ********************
+
+set      nocompatible
+set      autoindent
+syntax   on
+filetype plugin indent on
+
+" Visuals ********************
+
+colorscheme koehler
+set ttyfast			"Fast TTYs
+set mousehide			"Don't show the pointer when typing
+set title			"Set xterm title
+set number relativenumber	"Show relative line numbers
+set nowrap			"Don't wrap text
+set ruler			"Show row & column in status bar
+set showcmd			"Show commands as I type
+set showmode			"Show what mode I'm in
+set list			"Show whitepace (see listchars)
+set listchars=tab:>-,trail:.,extends:>,precedes:<
+   "Show chracters for tabs and lonely spaces
+
+" Searching ********************
+
+set showmatch			"Show matching curly brace
+set incsearch			"Search as I type
+set hlsearch			"Highlight search results
+"Clear search highlights with ESC
+noremap <silent><esc> <esc>:noh<CR><esc>
+
+" Command Completion ********************
+set wildmenu
+set wildchar=<TAB>
+

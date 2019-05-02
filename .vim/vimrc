@@ -6,7 +6,6 @@
 " Basics ********************
 
 set      nocompatible
-set      autoindent
 syntax   on
 filetype plugin indent on
 
@@ -24,6 +23,8 @@ set showmode			"Show what mode I'm in
 set list			"Show whitepace (see listchars)
 set listchars=tab:>-,trail:.,extends:>,precedes:<
    "Show chracters for tabs and lonely spaces
+set scrolloff=5			"Start scrolling before hitting the edge
+set lazyredraw
 
 " Searching ********************
 
@@ -37,3 +38,9 @@ noremap <silent><esc> <esc>:noh<CR><esc>
 set wildmenu
 set wildchar=<TAB>
 
+" Other ********************
+
+set smartcase
+set autoindent
+set smartindent
+set expandtab

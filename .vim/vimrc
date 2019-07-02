@@ -5,8 +5,8 @@
 
 " Basics ********************
 
-set      nocompatible
 syntax   on
+set      autoindent
 filetype plugin indent on
 
 " Visuals ********************
@@ -41,6 +41,4 @@ set wildchar=<TAB>
 " Other ********************
 
 set smartcase
-set autoindent
-set smartindent
 set expandtab
